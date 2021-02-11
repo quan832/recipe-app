@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import data from './Data/recipes.json'
+import Menu from './Components/Menu';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Menu recipes={data} />
   </React.StrictMode>,
   document.getElementById('root')
 );
